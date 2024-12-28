@@ -1,0 +1,41 @@
+<!ELEMENT ecole (membres_administratifs, classes, matieres, emploi_du_temps)>
+
+<!ELEMENT membres_administratifs (proviseur, proviseur_adjoint, censeur, intendant, cpe, secretaire, surveillants)>
+<!ELEMENT proviseur (#PCDATA)>
+<!ELEMENT proviseur_adjoint (#PCDATA)>
+<!ELEMENT censeur (#PCDATA)>
+<!ELEMENT intendant (#PCDATA)>
+<!ELEMENT cpe (#PCDATA)>
+<!ELEMENT secretaire (#PCDATA)>
+<!ELEMENT surveillants (surveillant+)>
+<!ELEMENT surveillant (#PCDATA)>
+
+<!ELEMENT classes (classe+)>
+<!ELEMENT classe (professeur_principal, eleves, moyenne_generale)>
+<!ATTLIST classe identifiant ID #REQUIRED>
+<!ELEMENT professeur_principal (#PCDATA)>
+<!ELEMENT eleves (eleve+)>
+<!ELEMENT eleve (nom, prenom, identifiant_unique, matieres, moyenne)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT identifiant_unique (#PCDATA)>
+<!ELEMENT matieres (matiere+)>
+<!ELEMENT matiere (nom, notes)>
+<!ELEMENT notes (note+)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT moyenne (#PCDATA)>
+<!ELEMENT moyenne_generale (#PCDATA)>
+
+<!ELEMENT matieres (matiere+)>
+<!ELEMENT matiere (nom, professeur_enseignant)>
+<!ATTLIST matiere identifiant ID #REQUIRED>
+<!ELEMENT professeur_enseignant (#PCDATA)>
+
+<!ELEMENT emploi_du_temps (jour+)>
+<!ELEMENT jour (cours+)>
+<!ATTLIST jour date CDATA #REQUIRED>
+<!ELEMENT cours (heure_debut, heure_fin, classe_concernee)>
+<!ATTLIST cours identifiant_matiere IDREF #REQUIRED>
+<!ATTLIST cours heure_debut CDATA #REQUIRED>
+<!ATTLIST cours heure_fin CDATA #REQUIRED>
+<!ATTLIST cours classe_concernee CDATA #REQUIRED>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Définition des types complexes -->
+  <xs:complexType name="MembreAdministratifType">
+    <xs:sequence>
+      <xs:element name="proviseur" type="xs:string"/>
+      <xs:element name="proviseur_adjoint" type="xs:string"/>
+      <xs:element name="censeur" type="xs:string"/>
+      <xs:element name="intendant" type="xs:string"/>
+      <xs:element name="cpe" type="xs:string"/>
+      <xs:element name="secretaire" type="xs:string"/>
+      <xs:element name="surveillants" type="SurveillantsType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SurveillantsType">
+    <xs:sequence>
+      <xs:element name="surveillant" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element name="note" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MatiereEnseigneeType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="notes" type="NoteType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EleveType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="prenom" type="xs:string"/>
+      <xs:element name="identifiant_unique" type="xs:string"/>
+      <xs:element name="matieres" type="MatiereEnseigneeType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="moyenne" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ClasseType">
+    <xs:sequence>
+      <xs:element name="professeur_principal" type="xs:string"/>
+      <xs:element name="eleves" type="EleveType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="moyenne_generale" type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="identifiant" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="CoursType">
+    <xs:sequence>
+      <xs:element name="heure_debut" type="xs:string"/>
+      <xs:element name="heure_fin" type="xs:string"/>
+      <xs:element name="classe_concernee" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition des éléments -->
+  <xs:element name="ecole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="membres_administratifs" type="MembreAdministratifType"/>
+        <xs:element name="classes" type="ClasseType" minOccurs="4" maxOccurs="4"/>
+        <xs:element name="matieres" type="MatiereEnseigneeType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="emploi_du_temps" type="CoursType" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

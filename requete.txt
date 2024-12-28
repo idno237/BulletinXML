@@ -1,0 +1,11 @@
+Requête 1 : Liste des noms des élèves de la classe de l'identifiant "6eme"
+XPath : /ecole/classes/classe[nom='6eme']/eleves/eleve/nom
+
+Requête 2 : Matières enseignées par "Madame Manga"
+XPath : /ecole/matieres/matiere[professeur_enseignant='Madame Manga']/nom
+
+Requête 3 : Cours prévus le "2024-05-04"
+XPath : /ecole/emploi_du_temps/jour[@date='2024-05-04']/cours
+
+Requête 4 : Nombre total d'élèves inscrits dans l'école
+XPath : count(/ecole/classes/classe/eleves/eleve)

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bulletin.xsl"?>
+<!DOCTYPE ecole SYSTEM "ecole.dtd">
+<ecole>
+  <!-- Informations sur les membres administratifs -->
+  <membres_administratifs>
+    <proviseur>Nguémo</proviseur>
+    <proviseur_adjoint>Mbella</proviseur_adjoint>
+    <censeur>Fomukong</censeur>
+    <intendant>Ngounou</intendant>
+    <cpe>Tchinda</cpe>
+    <secretaire>Yonkeu</secretaire>
+    <surveillants>
+      <surveillant>Biyong</surveillant>
+      <surveillant>Kenfack</surveillant>
+    </surveillants>
+  </membres_administratifs>
+
+  <!-- Informations sur les classes -->
+  <classes>
+    <classe identifiant="6eme"> 
+    <nom>6eme</nom>
+      <professeur_principal>Madame Manga</professeur_principal>
+      <eleves>
+        <!-- Premier élève -->
+        <eleve>
+          <nom>Nkemayang</nom>
+          <prenom>Paul</prenom>
+          <identifiant_unique>001</identifiant_unique>
+          <!-- Matières enseignées avec les notes -->
+          <matieres>
+            <matiere>
+              <nom>Français</nom>
+              <notes>
+                <note>14</note>
+              </notes>
+            </matiere>
+              <matiere>
+                  <nom>Anglais</nom>
+                  <notes>
+                      <note>18</note>
+                  </notes>
+              </matiere>
+              <!-- Ajout les autres matières enseignées avec les notes -->
+              <matiere>
+                  <nom>Maths</nom>
+                  <notes>
+                      <note>16</note>
+                  </notes>
+              </matiere>
+              <matiere>
+                  <nom>PCT</nom>
+                  <notes>
+                      <note>18</note>
+                  </notes>
+              </matiere>
+            <!-- Ajout les autres matières enseignées avec les notes -->
+          </matieres>
+          <moyenne>16.5</moyenne>
+        </eleve>        
+        <!-- Ajout les autres élèves de la classe de 6ème -->
+        <!-- Deuxième élève -->
+        <eleve>
+          <nom>Fouda</nom>
+          <prenom>Marie</prenom>
+          <identifiant_unique>002</identifiant_unique>
+          <!-- Matières enseignées avec les notes -->
+          <matieres>
+            <matiere>
+              <nom>Français</nom>
+              <notes>
+                <note>15</note>
+              </notes>
+            </matiere>
+              <matiere>
+                  <nom>Anglais</nom>
+                  <notes>
+                      <note>18</note>
+                  </notes>
+              </matiere>
+              <!-- Ajout les autres matières enseignées avec les notes -->
+              <matiere>
+                  <nom>Maths</nom>
+                  <notes>
+                      <note>06</note>
+                  </notes>
+              </matiere>
+              <matiere>
+                  <nom>PCT</nom>
+                  <notes>
+                      <note>08</note>
+                  </notes>
+              </matiere>
+            <!-- Ajout les autres matières enseignées avec les notes -->
+          </matieres>
+          <moyenne>11.75</moyenne>
+        </eleve>
+        <!-- Ajout les autres élèves de la classe de 6ème -->
+      </eleves>
+      <moyenne_generale>13</moyenne_generale>
+    </classe>
+
+
+    <classe identifiant="5eme">
+        <nom>5eme</nom>
+        <professeur_principal>Mme. Ngounou</professeur_principal>
+        <!-- Liste d'élèves -->
+        <eleves>
+            <eleve>
+                <nom>Mbia</nom>
+                <prenom>Pierre</prenom>
+                <identifiant_unique>003</identifiant_unique>
+                <!-- Matières enseignées avec les notes -->
+                <matieres>
+                    <matiere>
+                        <nom>Français</nom>
+                        <notes>
+                            <note>12</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Anglais</nom>
+                        <notes>
+                            <note>14</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières enseignées avec les notes -->
+                    <matiere>
+                        <nom>Maths</nom>
+                        <notes>
+                            <note>16</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Physique</nom>
+                        <notes>
+                            <note>13</note>
+                        </notes>
+                    </matiere>
+                    <!-- identique pour les autres matières -->
+                </matieres>
+                <moyenne>14.75</moyenne>
+            </eleve>
+            <eleve>
+                <nom>Mbiapie oba</nom>
+                <prenom>Pierre</prenom>
+                <identifiant_unique>0033</identifiant_unique>
+                <!-- Matières enseignées avec les notes -->
+                <matieres>
+                    <matiere>
+                        <nom>Français</nom>
+                        <notes>
+                            <note>12</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Anglais</nom>
+                        <notes>
+                            <note>18</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières enseignées avec les notes -->
+                    <matiere>
+                        <nom>Maths</nom>
+                        <notes>
+                            <note>16</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Physique</nom>
+                        <notes>
+                            <note>18</note>
+                        </notes>
+                    </matiere>
+                    <!-- identique pour les autres matières -->
+                </matieres>
+                <moyenne>16</moyenne>
+            </eleve>
+            <!-- Ajout les autres élèves -->
+        </eleves>
+        <moyenne_generale>15.35</moyenne_generale>
+    </classe>
+    
+    <classe identifiant="4eme">
+        <nom>4eme</nom>
+        <professeur_principal>M. Fomukong</professeur_principal>
+        <!-- Liste d'élèves -->
+        <eleves>
+            <eleve>
+                <nom>Biyong samuel</nom>
+                <prenom>Samuel</prenom>
+                <identifiant_unique>003</identifiant_unique>
+                <!-- Matières enseignées avec les notes -->
+                <matieres>
+                    <matiere>
+                        <nom>Français</nom>
+                        <notes>
+                            <note>12</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Maths</nom>
+                        <notes>
+                            <note>15</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières enseignées avec les notes -->
+                    
+                    <matiere>
+                        <nom>Histoire</nom>
+                        <notes>
+                            <note>14</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Géographie</nom>
+                        <notes>
+                            <note>16</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières avec les notes -->
+                </matieres>
+                <moyenne>14.25</moyenne>
+            </eleve>
+            <eleve>
+                <nom>Fonu eniel</nom>
+                <prenom>Sam</prenom>
+                <identifiant_unique>004</identifiant_unique>
+                <!-- Matières enseignées avec les notes -->
+                <matieres>
+                    <matiere>
+                        <nom>Français</nom>
+                        <notes>
+                            <note>02</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Maths</nom>
+                        <notes>
+                            <note>15</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières enseignées avec les notes -->
+             
+                    <matiere>
+                        <nom>Histoire</nom>
+                        <notes>
+                            <note>10</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Géographie</nom>
+                        <notes>
+                            <note>08</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières avec les notes -->
+                </matieres>
+                <moyenne>8.75</moyenne>
+            </eleve>
+            
+            <!-- Ajout les autres élèves de la classe de 4ème -->
+        </eleves>
+        <moyenne_generale>11.25</moyenne_generale>
+    </classe>
+    
+    <classe identifiant="3eme">
+        <nom>3eme</nom>
+        <professeur_principal>M. Ekotto</professeur_principal>
+        <!-- Liste d'élèves -->
+        <eleves>
+            <eleve>
+                <nom>Ekotto dav</nom>
+                <prenom>David</prenom>
+                <identifiant_unique>004</identifiant_unique>
+                <!-- Matières enseignées avec les notes -->
+                <matieres>
+                    <matiere>
+                        <nom>Français</nom>
+                        <notes>
+                            <note>13</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Maths</nom>
+                        <notes>
+                            <note>14</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières enseignées avec les notes -->
+                   
+                    <matiere>
+                        <nom>Histoire</nom>
+                        <notes>
+                            <note>15</note>
+                        </notes>
+                    </matiere>
+                    <matiere>
+                        <nom>Géographie</nom>
+                        <notes>
+                            <note>16</note>
+                        </notes>
+                    </matiere>
+                    <!-- Ajout les autres matières avec les notes -->
+                </matieres>
+                <moyenne>14.5</moyenne>
+            </eleve>
+            <!-- Ajout les autres élèves de la classe de 3ème -->
+        </eleves>
+        <eleve>
+            <nom>Ekotto dav</nom>
+            <prenom>David</prenom>
+            <identifiant_unique>0044</identifiant_unique>
+            <!-- Matières enseignées avec les notes -->
+            <matieres>
+                <matiere>
+                    <nom>Français</nom>
+                    <notes>
+                        <note>07</note>
+                    </notes>
+                </matiere>
+                <matiere>
+                    <nom>Maths</nom>
+                    <notes>
+                        <note>14</note>
+                    </notes>
+                </matiere>
+                <!-- Ajout les autres matières enseignées avec les notes -->
+               
+                <matiere>
+                    <nom>Histoire</nom>
+                    <notes>
+                        <note>05</note>
+                    </notes>
+                </matiere>
+                <matiere>
+                    <nom>Géographie</nom>
+                    <notes>
+                        <note>06</note>
+                    </notes>
+                </matiere>
+                <!-- Ajout les autres matières avec les notes -->
+            </matieres>
+            <moyenne>08</moyenne>
+        </eleve>
+        <!-- Ajout les autres élèves de la classe de 3ème -->
+        
+        <moyenne_generale>11.25</moyenne_generale>
+    </classe>
+    
+  </classes>
+
+
+  <!-- Liste des matières enseignées -->
+<matieres>
+    <matiere identifiant="1">
+      <nom>Français</nom>
+      <professeur_enseignant>Mme. Fotso</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="2">
+      <nom>Anglais</nom>
+      <professeur_enseignant>M. Mvondo</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="3">
+      <nom>Mathématiques</nom>
+      <professeur_enseignant>M. Ekotto</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="4">
+      <nom>Physique</nom>
+      <professeur_enseignant>Mme. Nkoue</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="5">
+      <nom>Chimie</nom>
+      <professeur_enseignant>M. Djomo</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="6">
+      <nom>Histoire</nom>
+      <professeur_enseignant>Mme. Kengne</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="7">
+      <nom>Géographie</nom>
+      <professeur_enseignant>M. Ngalle</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="8">
+      <nom>Philosophie</nom>
+      <professeur_enseignant>Mme. Ngo Biyong</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="9">
+      <nom>Éducation Musicale</nom>
+      <professeur_enseignant>M. Ndjana</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="10">
+      <nom>Arts Plastiques</nom>
+      <professeur_enseignant>Mme. Ngono</professeur_enseignant>
+    </matiere>
+    <matiere identifiant="11">
+      <nom>Éducation Physique et Sportive (EPS)</nom>
+      <professeur_enseignant>M. Tamko</professeur_enseignant>
+    </matiere>
+    <!-- Ajout les autres matières avec les professeurs enseignants -->
+  </matieres>
+  
+
+  <!-- Emploi du temps pour la semaine -->
+  <emploi_du_temps>
+    <jour date="2024-05-05">
+      <cours>
+        <!-- Ajout cours pour le 2024-05-05 -->
+        <cours identifiant_matiere="1" heure_debut="07:30" heure_fin="08:15" classe_concernee="6eme"/>
+        <cours identifiant_matiere="2" heure_debut="08:20" heure_fin="09:05" classe_concernee="6eme"/>
+        <cours identifiant_matiere="3" heure_debut="09:10" heure_fin="09:55" classe_concernee="6eme"/>
+        <!-- Ajout les cours pour les autres classes -->
+        <cours identifiant_matiere="1" heure_debut="07:30" heure_fin="08:15" classe_concernee="5eme"/>
+        <cours identifiant_matiere="2" heure_debut="08:20" heure_fin="09:05" classe_concernee="5eme"/>
+        <cours identifiant_matiere="3" heure_debut="09:10" heure_fin="09:55" classe_concernee="5eme"/>
+        <!-- Identique pour les autres classes -->
+        <!-- Pareil pour la 4ème salle -->
+        <cours identifiant_matiere="1" heure_debut="07:30" heure_fin="08:15" classe_concernee="3eme"/>
+        <cours identifiant_matiere="2" heure_debut="08:20" heure_fin="09:05" classe_concernee="3eme"/>
+        <cours identifiant_matiere="3" heure_debut="09:10" heure_fin="09:55" classe_concernee="3eme"/>
+      </cours>
+    </jour>
+    <!-- Ajout les cours pour les autres jours -->
+  </emploi_du_temps>
+
+</ecole>
